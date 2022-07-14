@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
     ss.dependency 'GoogleMobileAdsMediationAdColony'
     ss.dependency 'GoogleMobileAdsMediationAppLovin'
     ss.dependency 'GoogleMobileAdsMediationChartboost'
-    # ss.dependency 'GoogleMobileAdsMediationInMobi'
+    ss.dependency 'GoogleMobileAdsMediationInMobi'
     ss.dependency 'GoogleMobileAdsMediationIronSource'
     ss.dependency 'GoogleMobileAdsMediationVungle'
   end
