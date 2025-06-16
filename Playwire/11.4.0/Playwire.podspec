@@ -68,13 +68,8 @@ Pod::Spec.new do |s|
     }
   end
 
-    s.pod_target_xcconfig = {
-        'OTHER_SWIFT_FLAGS' => '-no-verify-emitted-module-interface'
-    }
-
     s.user_target_xcconfig = {
       'OTHER_LDFLAGS' => '-ObjC',
       'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"'
     }
-
 end
