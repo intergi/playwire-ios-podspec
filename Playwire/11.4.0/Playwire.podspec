@@ -67,10 +67,11 @@ Pod::Spec.new do |s|
       'PlaywirePrivacy' => ['sdks/Playwire_NonCOPPA.xcframework/ios-arm64/PrivacyInfo.xcprivacy'] 
     }
   end
+
+  s.xcconfig = { 'OTHER_SWIFT_FLAGS' => '$(inherited) -no-verify-emitted-module-interface' }
   
   s.user_target_xcconfig = {
     'OTHER_LDFLAGS' => '-ObjC',
-    'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"',
-    'OTHER_SWIFT_FLAGS' => '$(inherited) -no-verify-emitted-module-interface'
+    'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"'
   }
 end
