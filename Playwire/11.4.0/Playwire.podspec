@@ -70,6 +70,7 @@ Pod::Spec.new do |s|
   
   s.user_target_xcconfig = {
     'OTHER_LDFLAGS' => '-ObjC',
-    'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"'
+    'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"',
+    'OTHER_SWIFT_FLAGS' => '"$(inherited) -no-verify-emitted-module-interface"'
   }
 end
