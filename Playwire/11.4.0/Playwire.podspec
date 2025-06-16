@@ -69,7 +69,7 @@ Pod::Spec.new do |s|
   end
 
     s.pod_target_xcconfig = {
-        'OTHER_SWIFT_FLAGS' => '"$(inherited) -no-verify-emitted-module-interface"'
+        'OTHER_SWIFT_FLAGS' => '-no-verify-emitted-module-interface'
     }
 
     s.user_target_xcconfig = {
