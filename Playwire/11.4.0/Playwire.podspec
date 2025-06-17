@@ -68,8 +68,12 @@ Pod::Spec.new do |s|
     }
   end
 
-    s.user_target_xcconfig = {
-      'OTHER_LDFLAGS' => '-ObjC',
-      'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"'
-    }
+  s.pod_target_xcconfig = {
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
+  }
+  
+  s.user_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-ObjC',
+    'SWIFT_INCLUDE_PATHS' => '"$(PODS_ROOT)/Playwire/**" "$(PODS_XCFRAMEWORKS_BUILD_DIR)/**"'
+  }
 end
